@@ -22,7 +22,7 @@ jobs:
         run: sudo apt install nodejs
         
       - name: Install Dependencies
-        run: npm install
+        run: sudo apt install npm
 
       - name: install the IC SDK package
         run:  sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
