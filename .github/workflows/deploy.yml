@@ -19,7 +19,7 @@ jobs:
           node-version: 16  # Adjust the version to your project's requirements
       
       - name: Install Dependencies
-        run: install nodejs
+        run: sudo apt install nodejs
         
       - name: Install Dependencies
         run: npm install
