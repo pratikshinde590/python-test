@@ -5,18 +5,3 @@ def divide_numbers(a, b):
   pass
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-# # Fill in the missing code to perform Division
-# result = a / b
-#     return result
