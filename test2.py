@@ -1,18 +1,10 @@
 import unittest
-from program2 import add_numbers
+from program2 import multiply_numbers
 
-class TestAddNumbers(unittest.TestCase):
-    def test_add_positive_numbers(self):
-        self.assertEqual(add_numbers(2, 3), 5)
-
-    # def test_add_negative_numbers(self):
-    #     self.assertEqual(add_numbers(-2, -3), -5)
-
-    # def test_add_mixed_numbers(self):
-    #     self.assertEqual(add_numbers(2, -3), -1)
-
-    # def test_add_float_numbers(self):
-    #     self.assertAlmostEqual(add_numbers(2.5, 3.5), 6.0, places=1)
+class TestMultiplyNumbers(unittest.TestCase):
+    def test_multiply_positive_numbers(self):
+        self.assertEqual(multiply_numbers(2, 3), 6)
 
 if __name__ == "__main__":
     unittest.main()
+
