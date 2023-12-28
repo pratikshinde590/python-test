@@ -1,22 +1,8 @@
-# Requirments
+# Instructions:
+1. Clone the repository into your local system
+2. Downlode extension Run on Save and enable it.
+3. Restart your Vs code.
 
-You need to use create virtual environment as you should not corrupt your Python.
-
-# windows
-
-python -m venv .venv
-
-.venv/Scripts/Activate.ps1
-
-pip install -r requirements.txt
-
-# macOS
-
-python -m venv .venv
-
-source .venv/bin/activate
-
-pip install -r requirements.txt
 
 # Math Programs and Test
 
