@@ -1,5 +1,5 @@
 import unittest
-from lab.program1 import add_numbers
+from program1 import add_numbers
 
 
 class TestAddNumbers(unittest.TestCase):
