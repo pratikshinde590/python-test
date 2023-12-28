@@ -8,19 +8,18 @@
   "python.linting.pylintArgs": [
       "--disable=C0111"
   ],
-  "emeraldwalk.runonsave": {
-      "autoClearConsole": true,
-      "commands": [
-          {
-              "match": "lab\/.+py",
-              "cmd": "python ${fileDirname}/../../auto_grader.py ${file}",
-          },
-          {
-              "match": "lab\\\\.+py",
-              "cmd": "${fileDirname}\\..\\..\\.venv\\Scripts\\activate.bat && python ${fileDirname}\\..\\..\\auto_grader.py ${file}",
-          }
-      ]
-  },
+"emeraldwalk.runonsave": {
+    "autoClearConsole": true,
+    "commands": [
+        {
+          "match": ".*", // Match all files
+          "cmd": "git add . && git commit -m 'Auto commit on save' && git push origin main",
+          "isAsync": true
+        }
+    ]
+},
+
+
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 3000
 }
