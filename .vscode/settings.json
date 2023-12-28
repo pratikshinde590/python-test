@@ -1,25 +1,25 @@
 {
-  "python.testing.pytestArgs": [],
-  "python.testing.unittestEnabled": false,
-  "python.testing.pytestEnabled": true,
-  "python.analysis.extraPaths": [
-      "./tests/unit_test_helper"
-  ],
-  "python.linting.pylintArgs": [
-      "--disable=C0111"
-  ],
-"emeraldwalk.runonsave": {
-    "autoClearConsole": true,
-    "commands": [
-        {
-          "match": ".*", // Match all files
-          "cmd": "git add . && git commit -m 'Auto commit on save' && git push origin main",
-          "isAsync": true
-        }
-    ]
-},
-
-
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 3000
-}
+    "python.testing.pytestArgs": [],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.analysis.extraPaths": [
+        "./tests/unit_test_helper"
+    ],
+    "python.linting.pylintArgs": [
+        "--disable=C0111"
+    ],
+  "emeraldwalk.runonsave": {
+      "autoClearConsole": true,
+      "commands": [
+          {
+            "match": ".*", // Match all files
+            "cmd": "git add . && git commit -m 'Auto commit on save' && git push origin main",
+            "isAsync": true
+          }
+      ]
+  },
+  
+  
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 3000
+  }

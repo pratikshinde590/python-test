@@ -1,5 +1,5 @@
 import unittest
-from program3 import divide_numbers
+from lab.program3 import divide_numbers
 
 class TestDivideNumbers(unittest.TestCase):
     def test_divide_positive_numbers(self):
