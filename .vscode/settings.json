@@ -13,7 +13,7 @@
       "commands": [
           {
             "match": "program1.py",
-                "cmd": "git add . && git commit -m \"Auto commit on save\" && git push origin main && python \"${workspaceFolder}\\autochecker\\test1.py\" \"${workspaceFolder}\\program1.py\"",
+                "cmd": "git add . && git commit -m \"Auto commit on save\" && git push origin main && python \"${workspaceFolder}\\test1.py\" \"${workspaceFolder}\\program1.py\"",
           },
           // {
           //     "match": "program1.py",
