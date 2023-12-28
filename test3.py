@@ -6,4 +6,4 @@ class TestDivideNumbers(unittest.TestCase):
         self.assertEqual(divide_numbers(6, 3), 2)
 
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main(argv=['first-arg-is-ignored'], exit=False)
