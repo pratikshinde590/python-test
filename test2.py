@@ -6,5 +6,5 @@ class TestMultiplyNumbers(unittest.TestCase):
         self.assertEqual(multiply_numbers(2, 3), 6)
 
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main(argv=['first-arg-is-ignored'], exit=False)
 
