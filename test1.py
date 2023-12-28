@@ -1,6 +1,5 @@
 import unittest
-from program1 import add_numbers
-
+from program1 import add_numbers  # Import directly from program1
 
 class TestAddNumbers(unittest.TestCase):
     def test_add_positive_numbers(self):
@@ -8,3 +7,5 @@ class TestAddNumbers(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
