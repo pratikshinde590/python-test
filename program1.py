@@ -2,7 +2,7 @@
 
 def add_numbers(a, b):
 
-  pass
+  return a + b
 
 
 

@@ -1,0 +1,27 @@
+{
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 3000,
+    "emeraldwalk.runonsave": {
+      "autoClearConsole": true,
+      "commands": [
+        {
+          "match": "lab\/.+py",
+          "cmd": "python ${fileDirname}/../../auto_grader.py ${file}",
+        },
+        {
+          "match": "lab\\\\.+py",
+          "cmd": "${fileDirname}\\..\\..\\.venv\\Scripts\\activate.bat && python ${fileDirname}\\..\\..\\auto_grader.py ${file}",
+        }
+      ]
+    },
+    "python.testing.pytestArgs": [],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.analysis.extraPaths": [
+      "./tests/unit_test_helper"
+    ],
+    "python.linting.pylintArgs": [
+      "--disable=C0111"
+    ]
+  }
+  
