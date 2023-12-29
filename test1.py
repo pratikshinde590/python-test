@@ -1,14 +1,21 @@
 import unittest
-from program1 import sum_of_even_numbers
 
-class TestSumOfEvenNumbers(unittest.TestCase):
-    def test_sum_of_even_numbers(self):
-        self.assertEqual(sum_of_even_numbers([1, 2, 3, 4, 5, 6]), 12)
-        self.assertEqual(sum_of_even_numbers([2, 4, 6, 8, 10]), 30)
-        self.assertEqual(sum_of_even_numbers([1, 3, 5, 7, 9]), 0)
+class TestDistributeCandies(unittest.TestCase):
+    def test_example1(self):
+        candies, num_people = 7, 4
+        result = distribute_candies(candies, num_people)
+        self.assertEqual(result, [1, 2, 3, 1])
 
-if __name__ == "__main__":
+    def test_example2(self):
+        candies, num_people = 10, 3
+        result = distribute_candies(candies, num_people)
+        self.assertEqual(result, [5, 2, 3])
+
+    # Add more test cases as needed
+
+if __name__ == '__main__':
     unittest.main(argv=['first-arg-is-ignored'], exit=False)
+
 
 
 
