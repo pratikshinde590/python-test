@@ -1,5 +1,10 @@
-def distribute_candies(candies, num_people):
-    # Write your code here
+class Solution(object):
+    def isValid(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        
 
 
 
