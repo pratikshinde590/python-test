@@ -1,20 +1,27 @@
 import unittest
+from solution import Solution
 
-class TestDistributeCandies(unittest.TestCase):
-    def test_example1(self):
-        candies, num_people = 7, 4
-        result = distribute_candies(candies, num_people)
-        self.assertEqual(result, [1, 2, 3, 1])
+class TestSolution(unittest.TestCase):
+    def setUp(self):
+        self.solution = Solution()
 
-    def test_example2(self):
-        candies, num_people = 10, 3
-        result = distribute_candies(candies, num_people)
-        self.assertEqual(result, [5, 2, 3])
+    def test_valid_parentheses(self):
+        self.assertTrue(self.solution.isValid("()"))
+        self.assertTrue(self.solution.isValid("()[]{}"))
+        self.assertTrue(self.solution.isValid("{[()]}"))
 
-    # Add more test cases as needed
+    def test_invalid_parentheses(self):
+        self.assertFalse(self.solution.isValid("(]"))
+        self.assertFalse(self.solution.isValid("([)]"))
+
+    def test_empty_string(self):
+        self.assertTrue(self.solution.isValid(""))
+
+    def test_mixed_parentheses(self):
+        self.assertFalse(self.solution.isValid("(){""))
 
 if __name__ == '__main__':
-    unittest.main(argv=['first-arg-is-ignored'], exit=False)
+    unittest.main()
 
 
 
