@@ -1,7 +1,5 @@
-def sum_of_even_numbers(numbers):
+def distribute_candies(candies, num_people):
     # Write your code here
-    pass
-
 
 
 
