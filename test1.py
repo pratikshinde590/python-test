@@ -1,14 +1,28 @@
 import unittest
-from program1 import sum_of_even_numbers
+from solution import Solution
 
-class TestSumOfEvenNumbers(unittest.TestCase):
-    def test_sum_of_even_numbers(self):
-        self.assertEqual(sum_of_even_numbers([1, 2, 3, 4, 5, 6]), 12)
-        self.assertEqual(sum_of_even_numbers([2, 4, 6, 8, 10]), 30)
-        self.assertEqual(sum_of_even_numbers([1, 3, 5, 7, 9]), 0)
+class TestSolution(unittest.TestCase):
+    def setUp(self):
+        self.solution = Solution()
 
-if __name__ == "__main__":
-    unittest.main(argv=['first-arg-is-ignored'], exit=False)
+    def test_valid_parentheses(self):
+        self.assertTrue(self.solution.isValid("()"))
+        self.assertTrue(self.solution.isValid("()[]{}"))
+        self.assertTrue(self.solution.isValid("{[()]}"))
+
+    def test_invalid_parentheses(self):
+        self.assertFalse(self.solution.isValid("(]"))
+        self.assertFalse(self.solution.isValid("([)]"))
+
+    def test_empty_string(self):
+        self.assertTrue(self.solution.isValid(""))
+
+    def test_mixed_parentheses(self):
+        self.assertFalse(self.solution.isValid("(){""))
+
+if __name__ == '__main__':
+    unittest.main()
+
 
 
 

@@ -1,7 +1,10 @@
-def sum_of_even_numbers(numbers):
-    # Write your code here
-    pass
-
+class Solution(object):
+    def isValid(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        
 
 
 
