@@ -1,5 +1,5 @@
 import unittest
-from solution import Solution
+from program1 import Solution
 
 class TestSolution(unittest.TestCase):
     def setUp(self):
@@ -18,11 +18,7 @@ class TestSolution(unittest.TestCase):
         self.assertTrue(self.solution.isValid(""))
 
     def test_mixed_parentheses(self):
-        self.assertFalse(self.solution.isValid("(){""))
+        self.assertFalse(self.solution.isValid("(){"))
 
 if __name__ == '__main__':
-    unittest.main()
-
-
-
-
+    unittest.main(argv=['first-arg-is-ignored'], exit=False)
