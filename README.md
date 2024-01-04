@@ -5,8 +5,8 @@
 
 # Questions:
 
-1. program1.md
-2. program2.md
+1. program1.md -- 20 Marks
+2. program2.md -- 20 Marks
 
 
 ## Test Script
