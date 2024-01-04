@@ -17,10 +17,23 @@ The test script (`test1.py`), (`test2.py`) is designed to check the correctness 
 
 1. For Each program, there are 20 marks.
 2. Do not make changes to these files (`test1.py`), (`test2.py`)
-3. Execute the test script by running the command:
-
+3. To run your program on local run the command:
     ```bash
     python program1.py
+    
+    ``` 
+        ```bash
+    python program2.py
+    
+    ```
+4. To Execute the test script by run the command:
+
+    ```bash
+    python test1.py
+    
+    ```
+        ```bash
+    python test2.py
     
     ```
 
