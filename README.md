@@ -24,7 +24,6 @@ The test script (`test1.py`), (`test2.py`) is designed to check the correctness 
     ```   
     ``` 
     python program2.py
-
 4. To Execute the test script by run the command:
 
     ```bash
