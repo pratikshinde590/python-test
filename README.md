@@ -25,14 +25,12 @@ The test script (`test1.py`), (`test2.py`) is designed to check the correctness 
     ``` 
     python program2.py
 4. To Execute the test script by run the command:
-
     ```bash
-    python test1.py
+    python program1.py
     
-    ```
-    python test2.py
-
-
+    ```   
+    ``` 
+    python program2.py
 5. Review the test results for each program. If all tests pass, the programs are working correctly.
 6. Commit and push your code to the repository so that your test will be submitted.
 
