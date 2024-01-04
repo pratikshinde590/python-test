@@ -22,7 +22,6 @@ The test script (`test1.py`), (`test2.py`) is designed to check the correctness 
     python program1.py
     
     ``` 
-    python program1.py
     
     
     ``` 
