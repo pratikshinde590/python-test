@@ -1,13 +1,6 @@
-class Solution(object):
-    def isValid(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
-        pass
-    
-
-
-
-  
-
+class Solution:
+   
+    def getTotalIsles(self, grid: list[list[str]]) -> int:
+    #    write your code here
+                    
+        return 0

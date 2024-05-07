@@ -5,20 +5,17 @@ class TestSolution(unittest.TestCase):
     def setUp(self):
         self.solution = Solution()
 
-    def test_valid_parentheses(self):
-        self.assertTrue(self.solution.isValid("()"))
-        self.assertTrue(self.solution.isValid("()[]{}"))
-        self.assertTrue(self.solution.isValid("{[()]}"))
+    def test_case1(self):
+        result = self.solution.getTotalIsles([["L","L","L","L","W"],["L","L","W","L","W"],["L","L","W","W","W"],["W","W","W","W","W"]])
+        self.assertEqual(result, 1)
 
-    def test_invalid_parentheses(self):
-        self.assertFalse(self.solution.isValid("(]"))
-        self.assertFalse(self.solution.isValid("([)]"))
+    def test_case2(self):
+        result = self.solution.getTotalIsles([["L","L","W","W","W"],["L","L","W","W","W"],["W","W","L","W","W"],["W","W","W","L","L"]])
+        self.assertEqual(result, 3)
 
-    def test_empty_string(self):
-        self.assertTrue(self.solution.isValid(""))
-
-    def test_mixed_parentheses(self):
-        self.assertFalse(self.solution.isValid("(){"))
+    def test_case3(self):
+        result = self.solution.getTotalIsles([["W", "W", "W", "W"], ["W", "L", "L", "W"], ["W", "L", "L", "W"], ["W", "W", "W", "W"]])
+        self.assertEqual(result, 1)
 
 if __name__ == '__main__':
     unittest.main(argv=['first-arg-is-ignored'], exit=False)
