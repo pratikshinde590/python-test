@@ -1,46 +1,25 @@
 # Difficulty Level: Moderate
 
 # Problem Statement:
-Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
 
-Symbol       Value
-I             1
-V             5
-X             10
-L             50
-C             100
-D             500
-M             1000
-For example, 2 is written as II in Roman numeral, just two ones added together. 12 is written as XII, which is simply X + II. The number 27 is written as XXVII, which is XX + V + II.
+Secret Decoder Ring Challenge
 
-Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:
+Imagine you have a secret decoder ring with two special symbols:
 
-I can be placed before V (5) and X (10) to make 4 and 9. 
-X can be placed before L (50) and C (100) to make 40 and 90. 
-C can be placed before D (500) and M (1000) to make 400 and 900.
-Given a roman numeral, convert it to an integer.
+Star Symbol (*): This symbol acts like a wildcard and can stand in for any series of letters, including no letters at all.
+Question Mark (?): This symbol can replace a single letter in a coded message.
+Your job is to compare a secret message (the input string) with a decoder key (the pattern) using this decoder ring.
 
- 
+The Rules:
 
-Example 1:
+The decoder key must match the entire secret message, not just part of it.
+The question mark can replace any single letter in the message.
+The star symbol can replace any sequence of letters (including none) in the message.
+Examples:
 
-Input: s = "III"
-Output: 3
-Explanation: III = 3.
-Example 2:
+Message: "aa" Decoder Key: "a" Match: False ("a" doesn't fit the whole message)
+Message: "aa" Decoder Key: "*" Match: True (the star can represent both "a"s)
+Message: "cb" Decoder Key: "?a" Match: False (the question mark can only replace one letter, and "a" doesn't match "b")
+Challenge:
 
-Input: s = "LVIII"
-Output: 58
-Explanation: L = 50, V= 5, III = 3.
-Example 3:
-
-Input: s = "MCMXCIV"
-Output: 1994
-Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
- 
-
-Constraints:
-
-1 <= s.length <= 15
-s contains only the characters ('I', 'V', 'X', 'L', 'C', 'D', 'M').
-It is guaranteed that s is a valid roman numeral in the range [1, 3999].
+Given a secret message and a decoder key using these symbols, can you tell if the decoder key unlocks the message (meaning it matches the entire message)?

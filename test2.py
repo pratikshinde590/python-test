@@ -1,33 +1,20 @@
 import unittest
-from program2 import Solution
+from program2 import decode_message
 
-class TestRomanToInt(unittest.TestCase):
-    def setUp(self):
-        self.solution = Solution()
+class TestDecoder(unittest.TestCase):
+    def test_case1(self):
+        self.assertEqual(decode_message("aa", "a"), False)
 
-    def test_example1(self):
-        self.assertEqual(self.solution.romanToInt("III"), 3)
+    def test_case2(self):
+        self.assertEqual(decode_message("aa", "*"), True)
 
-    def test_example2(self):
-        self.assertEqual(self.solution.romanToInt("LVIII"), 58)
+    def test_case3(self):
+        self.assertEqual(decode_message("cb", "?a"), False)
 
-    def test_example3(self):
-        self.assertEqual(self.solution.romanToInt("MCMXCIV"), 1994)
-
-    def test_single_roman_digit(self):
-        self.assertEqual(self.solution.romanToInt("X"), 10)
-
-    def test_subtraction_rule(self):
-        self.assertEqual(self.solution.romanToInt("IV"), 4)
-        self.assertEqual(self.solution.romanToInt("IX"), 9)
-
-    def test_large_number(self):
-        self.assertEqual(self.solution.romanToInt("MMMCMXCIX"), 3999)
-
-    def test_empty_string(self):
-        self.assertEqual(self.solution.romanToInt(""), 0)
+    def test_case4(self):
+        self.assertEqual(decode_message("abc", "?b?"), True)
 
 if __name__ == '__main__':
-    unittest.main(argv=['first-arg-is-ignored'], exit=False)
+    unittest.main()
 
 
