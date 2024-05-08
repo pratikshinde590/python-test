@@ -1,21 +1,16 @@
 import unittest
-from program1 import Solution
+from program2 import longest_substring
 
-class TestSolution(unittest.TestCase):
-    def setUp(self):
-        self.solution = Solution()
-
-    def test_case1(self):
-        result = self.solution.getTotalIsles([["L","L","L","L","W"],["L","L","W","L","W"],["L","L","W","W","W"],["W","W","W","W","W"]])
-        self.assertEqual(result, 1)
-
-    def test_case2(self):
-        result = self.solution.getTotalIsles([["L","L","W","W","W"],["L","L","W","W","W"],["W","W","L","W","W"],["W","W","W","L","L"]])
-        self.assertEqual(result, 3)
-
-    def test_case3(self):
-        result = self.solution.getTotalIsles([["W", "W", "W", "W"], ["W", "L", "L", "W"], ["W", "L", "L", "W"], ["W", "W", "W", "W"]])
-        self.assertEqual(result, 1)
+class TestLongestSubstring(unittest.TestCase):
+    def test_longest_substring(self):
+        self.assertEqual(longest_substring("abcabcbb"), 3)
+        self.assertEqual(longest_substring("bbbbb"), 1)
+        self.assertEqual(longest_substring("pwwkew"), 3)
+        self.assertEqual(longest_substring("abcdefghijklmnopqrstuvwxyz"), 26)
+        self.assertEqual(longest_substring("aab"), 2)
+        self.assertEqual(longest_substring("dvdf"), 3)
 
 if __name__ == '__main__':
     unittest.main(argv=['first-arg-is-ignored'], exit=False)
+
+

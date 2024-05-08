@@ -1,20 +1,15 @@
 import unittest
-from program2 import decode_message
+from program1 import smallest_missing_positive_integer
 
-class TestDecoder(unittest.TestCase):
-    def test_case1(self):
-        self.assertEqual(decode_message("aa", "a"), False)
-
-    def test_case2(self):
-        self.assertEqual(decode_message("aa", "*"), True)
-
-    def test_case3(self):
-        self.assertEqual(decode_message("cb", "?a"), False)
-
-    def test_case4(self):
-        self.assertEqual(decode_message("abc", "?b?"), True)
+class TestSmallestMissingPositiveInteger(unittest.TestCase):
+    def test_smallest_missing_positive_integer(self):
+        self.assertEqual(smallest_missing_positive_integer([3, 4, -1, 1]), 2)
+        self.assertEqual(smallest_missing_positive_integer([1, 2, 0]), 3)
+        self.assertEqual(smallest_missing_positive_integer([-1, -3, 4, 2]), 1)
+        self.assertEqual(smallest_missing_positive_integer([1, 2, 3]), 4)
+        self.assertEqual(smallest_missing_positive_integer([-1, -2, -3]), 1)
+        self.assertEqual(smallest_missing_positive_integer([1, 2, 3, 4, 5, 6, 7, 8, 9]), 10)
+        self.assertEqual(smallest_missing_positive_integer([]), 1)
 
 if __name__ == '__main__':
-    unittest.main()
-
-
+    unittest.main(argv=['first-arg-is-ignored'], exit=False)
